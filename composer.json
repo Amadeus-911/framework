@@ -1,0 +1,29 @@
+{
+    "require": {
+        "symfony/http-foundation": "^5.4",
+        "symfony/routing": "^5.4",
+        "symfony/http-kernel": "^5.4",
+        "symfony/event-dispatcher": "^6.3",
+        "symfony/dependency-injection": "^6.3",
+        "symfony/var-dumper": "^6.3",
+        "symfony/dotenv": "^6.3",
+        "illuminate/database": "^10.16",
+        "illuminate/events": "^10.16",
+        "illuminate/view": "^10.16",
+        "illuminate/collections": "^10.16",
+        "illuminate/container": "^10.16",
+        "illuminate/contracts": "^10.16",
+        "illuminate/filesystem": "^10.16",
+        "illuminate/macroable": "^10.16",
+        "illuminate/support": "^10.16"
+    },
+    "...": "...",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    }
+}

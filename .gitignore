@@ -1,0 +1,6 @@
+.phpunit.result.cache
+.env
+/vendor
+/cache
+/.vscode
+/.phpunit.cache
