@@ -30,3 +30,11 @@ run the server
 symfony server:start --passthru=front.php
 ```
 
+defined routes are currently:
+
+- /users
+- /index/{name}
+- /customers
+
+
+
