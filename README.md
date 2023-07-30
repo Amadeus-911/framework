@@ -12,15 +12,21 @@ install symfony local web server from here (https://symfony.com/doc/current/setu
 ## Install
 
 run the following command to install required packages 
-``` composer update``` 
+``` 
+composer update
+``` 
 
 copy the .env.example file to a .env file and configure 
 
 migrate and seed to database 
 
-``` cd database/Schema && php UserSchema.php && php CustomerSchema.php && cd .. && cd seeders && php users_seeder.php && php customer_seeder.php && cd .. && cd .. ```
+``` 
+cd database/Schema && php UserSchema.php && php CustomerSchema.php && cd .. && cd seeders && php users_seeder.php && php customer_seeder.php && cd .. && cd ..
+```
 
 run the server
 
-``` symfony server:start --passthru=front.php ```
+``` 
+symfony server:start --passthru=front.php
+```
 
