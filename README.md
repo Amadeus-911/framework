@@ -9,7 +9,7 @@
 install symfony local web server from here (https://symfony.com/doc/current/setup/symfony_server.html)
 
 
-##Install
+## Install
 
 run the following command to install required packages 
 ``` composer update``` 
