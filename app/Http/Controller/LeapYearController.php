@@ -26,7 +26,7 @@ class LeapYearController
         $apiKey = $_ENV['API_KEY'];
         $leapYear = new LeapYear();
         if ($leapYear->isLeapYear($year)) {
-            return 'Yep, this is a leap year! ' . $apiKey. User::all();
+            return 'Yep, this is a leap year! ';
         }
 
         return 'Nope, this is not a leap year.';
