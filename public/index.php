@@ -7,8 +7,8 @@ require_once __DIR__.'/../config/template.php';
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-$routes = include __DIR__.'/../src/app.php';
-$container = include __DIR__.'/../src/container.php';
+$routes = include __DIR__ . '/../routes/web.php';
+$container = include __DIR__.'/../app/container.php';
 
 $request = Request::createFromGlobals();
 
@@ -17,7 +17,7 @@ function render_template(Request $request): Response
 {
     extract($request->attributes->all(), EXTR_SKIP);
     ob_start();
-    include sprintf(__DIR__.'/../src/pages/%s.php', $_route);
+    include sprintf(__DIR__.'/../resources/views/%s.php', $_route);
 
     return new Response(ob_get_clean());
 }
@@ -26,7 +26,7 @@ function render_template(Request $request): Response
 // $container->setParameter('routes', array($routes));
 $container->setParameter('charset', 'UTF-8');
 $container->setParameter('debug', true);
-$response = $container->get('framework')->handle($request);
+$response = $container->get('kernel')->handle($request);
 
 
 // dd($response);

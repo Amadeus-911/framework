@@ -14,7 +14,7 @@ use Illuminate\View\ViewFinderInterface;
 use Illuminate\Events\Dispatcher;
 
 require_once $rootPath.'\config\database.php';
-$viewsFolder = $rootPath . '\src\pages';
+$viewsFolder = $rootPath . '\resources\views';
 
 $filesystem = new Filesystem();
 $viewFinder = new FileViewFinder($filesystem, [$viewsFolder]);

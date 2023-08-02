@@ -1,9 +1,9 @@
 <?php 
 
-namespace Calendar\Controller;
+namespace Http\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
-use Calendar\Model\Customer;
+use Model\Customer;
 use Illuminate\Support\Facades\View;
 
 

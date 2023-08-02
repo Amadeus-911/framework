@@ -1,14 +1,14 @@
 <?php
 // example.com/src/Calendar/Controller/LeapYearController.php
 
-namespace Calendar\Controller;
+namespace Http\Controller;
 
 
-use Calendar\Model\LeapYear;
+use Model\LeapYear;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Dotenv\Dotenv;
-use Calendar\Model\User;
+use Model\User;
 
 //$dotenv->load(__DIR__.'/.env');
 

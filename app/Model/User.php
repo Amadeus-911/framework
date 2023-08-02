@@ -1,6 +1,6 @@
 <?php
 
-namespace Calendar\Model;
+namespace Model;
 
 use Illuminate\Database\Eloquent\Model;
 
